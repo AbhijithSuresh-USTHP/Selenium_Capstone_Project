@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-24T15:48:03 IST" name="Suite" finished-at="2025-11-24T15:48:16 IST" duration-ms="12459">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@5b970f7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-11-24T15:48:03 IST" name="Test" finished-at="2025-11-24T15:48:16 IST" duration-ms="12397">
+      <class name="testrunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testrunner@5b970f7]" started-at="2025-11-24T15:48:03 IST" name="setUpClass" finished-at="2025-11-24T15:48:04 IST" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@5b970f7]" started-at="2025-11-24T15:48:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T15:48:10 IST" duration-ms="6647" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accessing admin dashboard as admin"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Admin dashboard]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "driver" is null
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:198)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:632)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:629)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at pageobjects.Admin.clickadminbutton(Admin.java:20)
+at stepdefinition.tc5_valid_admin_dashboard.the_user_enters_the_username_as_and_password_as_and_then_clicks_the_admin_option(tc5_valid_admin_dashboard.java:34)
+at ✽.the user enters the username as "admin" and password as "admin" and then clicks the admin option(file:///C:/Users/Administrator/Documents/Selenium%20demo/codecharge_community_portal_capstone/features/adminLogin.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@5b970f7]" started-at="2025-11-24T15:48:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T15:48:15 IST" duration-ms="5108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Accessing admin dashboard as guest"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Admin dashboard]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner@5b970f7]" started-at="2025-11-24T15:48:15 IST" name="tearDownClass" finished-at="2025-11-24T15:48:16 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner -->
+    </test> <!-- Test -->
+    <test started-at="2025-11-24T15:48:16 IST" name="Test2" finished-at="2025-11-24T15:48:16 IST" duration-ms="6">
+      <class name="utilities.extentreport">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:utilities.extentreport@754777cd]" started-at="2025-11-24T15:48:03 IST" name="beforeSuite" finished-at="2025-11-24T15:48:03 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="f()[pri:0, instance:utilities.extentreport@754777cd]" started-at="2025-11-24T15:48:16 IST" name="f" finished-at="2025-11-24T15:48:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:utilities.extentreport@754777cd]" started-at="2025-11-24T15:48:16 IST" name="afterSuite" finished-at="2025-11-24T15:48:16 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- utilities.extentreport -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
