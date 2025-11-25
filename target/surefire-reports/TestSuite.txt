@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 169.711 s <<< FAILURE! - in TestSuite
-runScenario(testrunner)  Time elapsed: 12.187 s  <<< FAILURE!
+Tests run: 13, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 222.862 s <<< FAILURE! - in TestSuite
+runScenario(testrunner)  Time elapsed: 14.696 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 
-runScenario(testrunner)  Time elapsed: 27.329 s  <<< FAILURE!
+runScenario(testrunner)  Time elapsed: 26.959 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Provide a valid email id')]"}
   (Session info: MicrosoftEdge=142.0.3595.94)
@@ -13,11 +13,11 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [2dbb0b36e991ba7802b70642918537c8, findElement {using=xpath, value=//*[contains(text(),'Provide a valid email id')]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 11928, ms:edgeOptions: {debuggerAddress: localhost:52563}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52563/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2dbb0b36e991ba7802b70642918537c8
+Command: [8473399649dc122a9f1829461f316520, findElement {value=//*[contains(text(),'Provide a valid email id')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 5916, ms:edgeOptions: {debuggerAddress: localhost:53344}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53344/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8473399649dc122a9f1829461f316520
 
-runScenario(testrunner)  Time elapsed: 24.494 s  <<< FAILURE!
+runScenario(testrunner)  Time elapsed: 26.45 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Provide a valid email id')]"}
   (Session info: MicrosoftEdge=142.0.3595.94)
@@ -25,7 +25,7 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [794a95df8008259bc670dedbd2add5a6, findElement {using=xpath, value=//*[contains(text(),'Provide a valid email id')]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 8912, ms:edgeOptions: {debuggerAddress: localhost:52612}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52612/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 794a95df8008259bc670dedbd2add5a6
+Command: [6c4e86c2b34a19ecb5a39a2cbad6da02, findElement {value=//*[contains(text(),'Provide a valid email id')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 7108, ms:edgeOptions: {debuggerAddress: localhost:53390}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53390/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c4e86c2b34a19ecb5a39a2cbad6da02
 

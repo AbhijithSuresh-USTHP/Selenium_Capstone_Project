@@ -11,11 +11,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:17:12.144Z",
+        "start_timestamp": "2025-11-25T15:28:56.378Z",
         "before": [
           {
             "result": {
-              "duration": 8735492900,
+              "duration": 8003483600,
               "status": "passed"
             },
             "match": {
@@ -30,7 +30,7 @@
         "after": [
           {
             "result": {
-              "duration": 188995400,
+              "duration": 234999600,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1516428900,
+              "duration": 1621336400,
               "status": "passed"
             },
             "line": 6,
@@ -77,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 3068807900,
+              "duration": 3856513700,
               "status": "passed"
             },
             "line": 7,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 62001200,
+              "duration": 30001100,
               "status": "passed"
             },
             "line": 8,
@@ -115,11 +115,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:17:25.886Z",
+        "start_timestamp": "2025-11-25T15:29:10.295Z",
         "before": [
           {
             "result": {
-              "duration": 7240346500,
+              "duration": 8871737600,
               "status": "passed"
             },
             "match": {
@@ -134,7 +134,7 @@
         "after": [
           {
             "result": {
-              "duration": 190997000,
+              "duration": 289998300,
               "status": "passed"
             },
             "match": {
@@ -147,7 +147,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1488093500,
+              "duration": 1523308500,
               "status": "passed"
             },
             "line": 11,
@@ -181,7 +181,7 @@
           },
           {
             "result": {
-              "duration": 3073047000,
+              "duration": 3849382100,
               "status": "passed"
             },
             "line": 12,
@@ -194,7 +194,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat stepdefinition.tc8_adding_invalid_event.the_system_should_display_and_error_message_Event_date_must_be_today_or_a_future_date(tc8_adding_invalid_event.java:54)\r\n\tat ✽.the system should display and error message Event date must be today or a future date(file:///C:/Users/Administrator/Documents/Selenium%20demo/codecharge_community_portal_capstone/features/Events.feature:13)\r\n",
-              "duration": 145436500,
+              "duration": 120004600,
               "status": "failed"
             },
             "line": 13,
@@ -240,11 +240,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:17:38.056Z",
+        "start_timestamp": "2025-11-25T15:29:24.981Z",
         "before": [
           {
             "result": {
-              "duration": 4845192500,
+              "duration": 5415405400,
               "status": "passed"
             },
             "match": {
@@ -259,7 +259,7 @@
         "after": [
           {
             "result": {
-              "duration": 186080300,
+              "duration": 182003500,
               "status": "passed"
             },
             "match": {
@@ -272,7 +272,7 @@
         "steps": [
           {
             "result": {
-              "duration": 110998600,
+              "duration": 117997700,
               "status": "passed"
             },
             "line": 6,
@@ -294,7 +294,7 @@
           },
           {
             "result": {
-              "duration": 4092350700,
+              "duration": 5644119400,
               "status": "passed"
             },
             "line": 7,
@@ -320,11 +320,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:17:47.311Z",
+        "start_timestamp": "2025-11-25T15:29:36.362Z",
         "before": [
           {
             "result": {
-              "duration": 4825717800,
+              "duration": 4924292200,
               "status": "passed"
             },
             "match": {
@@ -339,7 +339,7 @@
         "after": [
           {
             "result": {
-              "duration": 173996600,
+              "duration": 151007300,
               "status": "passed"
             },
             "match": {
@@ -352,7 +352,7 @@
         "steps": [
           {
             "result": {
-              "duration": 113023500,
+              "duration": 110002400,
               "status": "passed"
             },
             "line": 6,
@@ -374,7 +374,7 @@
           },
           {
             "result": {
-              "duration": 5626757600,
+              "duration": 4078972400,
               "status": "passed"
             },
             "line": 7,
@@ -400,11 +400,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:17:58.064Z",
+        "start_timestamp": "2025-11-25T15:29:45.651Z",
         "before": [
           {
             "result": {
-              "duration": 5018639200,
+              "duration": 12200122300,
               "status": "passed"
             },
             "match": {
@@ -419,7 +419,7 @@
         "after": [
           {
             "result": {
-              "duration": 179347300,
+              "duration": 168769500,
               "status": "passed"
             },
             "match": {
@@ -432,7 +432,7 @@
         "steps": [
           {
             "result": {
-              "duration": 112995500,
+              "duration": 113954200,
               "status": "passed"
             },
             "line": 15,
@@ -454,7 +454,7 @@
           },
           {
             "result": {
-              "duration": 2763652000,
+              "duration": 2869567500,
               "status": "passed"
             },
             "line": 16,
@@ -480,11 +480,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:18:06.160Z",
+        "start_timestamp": "2025-11-25T15:30:01.021Z",
         "before": [
           {
             "result": {
-              "duration": 5716362500,
+              "duration": 5135412300,
               "status": "passed"
             },
             "match": {
@@ -499,7 +499,7 @@
         "after": [
           {
             "result": {
-              "duration": 190972600,
+              "duration": 177423500,
               "status": "passed"
             },
             "match": {
@@ -512,7 +512,7 @@
         "steps": [
           {
             "result": {
-              "duration": 111999100,
+              "duration": 100995700,
               "status": "passed"
             },
             "line": 15,
@@ -534,7 +534,7 @@
           },
           {
             "result": {
-              "duration": 2793472700,
+              "duration": 2786316100,
               "status": "passed"
             },
             "line": 16,
@@ -580,11 +580,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:18:14.994Z",
+        "start_timestamp": "2025-11-25T15:30:09.237Z",
         "before": [
           {
             "result": {
-              "duration": 7862742200,
+              "duration": 44314735900,
               "status": "passed"
             },
             "match": {
@@ -599,7 +599,7 @@
         "after": [
           {
             "result": {
-              "duration": 218003500,
+              "duration": 186004500,
               "status": "passed"
             },
             "match": {
@@ -612,7 +612,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4145024000,
+              "duration": 4113207200,
               "status": "passed"
             },
             "line": 6,
@@ -630,7 +630,7 @@
           },
           {
             "result": {
-              "duration": 5604013900,
+              "duration": 6310945000,
               "status": "passed"
             },
             "line": 7,
@@ -656,11 +656,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:18:32.853Z",
+        "start_timestamp": "2025-11-25T15:31:04.182Z",
         "before": [
           {
             "result": {
-              "duration": 7753389500,
+              "duration": 7903013200,
               "status": "passed"
             },
             "match": {
@@ -675,7 +675,7 @@
         "after": [
           {
             "result": {
-              "duration": 217007800,
+              "duration": 170997200,
               "status": "passed"
             },
             "match": {
@@ -688,7 +688,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4125229600,
+              "duration": 4194177600,
               "status": "passed"
             },
             "line": 6,
@@ -706,7 +706,7 @@
           },
           {
             "result": {
-              "duration": 5648854700,
+              "duration": 5645019600,
               "status": "passed"
             },
             "line": 7,
@@ -732,11 +732,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:18:50.618Z",
+        "start_timestamp": "2025-11-25T15:31:22.110Z",
         "before": [
           {
             "result": {
-              "duration": 9123801800,
+              "duration": 8690643500,
               "status": "passed"
             },
             "match": {
@@ -751,7 +751,7 @@
         "after": [
           {
             "result": {
-              "duration": 208997800,
+              "duration": 226003700,
               "status": "passed"
             },
             "match": {
@@ -764,7 +764,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4144062700,
+              "duration": 4111640900,
               "status": "passed"
             },
             "line": 15,
@@ -782,8 +782,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Provide a valid email id\u0027)]\"}\n  (Session info: MicrosoftEdge\u003d142.0.3595.94)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nBuild info: version: \u00274.38.0\u0027, revision: \u00276b412e825c*\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002725\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [2dbb0b36e991ba7802b70642918537c8, findElement {using\u003dxpath, value\u003d//*[contains(text(),\u0027Provide a valid email id\u0027)]}]\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 11928, ms:edgeOptions: {debuggerAddress: localhost:52563}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\\Windows\\SystemTemp\\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52563/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 2dbb0b36e991ba7802b70642918537c8\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)\r\n\tat stepdefinition.tc4_invalid_email_updation.the_system_should_display_an_error_message(tc4_invalid_email_updation.java:42)\r\n\tat ✽.the system should display an error message Provide a valid email id(file:///C:/Users/Administrator/Documents/Selenium%20demo/codecharge_community_portal_capstone/features/Update.feature:16)\r\n",
-              "duration": 13832869200,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Provide a valid email id\u0027)]\"}\n  (Session info: MicrosoftEdge\u003d142.0.3595.94)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nBuild info: version: \u00274.38.0\u0027, revision: \u00276b412e825c*\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002725\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [8473399649dc122a9f1829461f316520, findElement {value\u003d//*[contains(text(),\u0027Provide a valid email id\u0027)], using\u003dxpath}]\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 5916, ms:edgeOptions: {debuggerAddress: localhost:53344}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\\Windows\\SystemTemp\\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53344/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 8473399649dc122a9f1829461f316520\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)\r\n\tat stepdefinition.tc4_invalid_email_updation.the_system_should_display_an_error_message(tc4_invalid_email_updation.java:42)\r\n\tat ✽.the system should display an error message Provide a valid email id(file:///C:/Users/Administrator/Documents/Selenium%20demo/codecharge_community_portal_capstone/features/Update.feature:16)\r\n",
+              "duration": 13913348100,
               "status": "failed"
             },
             "line": 16,
@@ -809,11 +809,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:19:17.946Z",
+        "start_timestamp": "2025-11-25T15:31:49.071Z",
         "before": [
           {
             "result": {
-              "duration": 7849841600,
+              "duration": 8182491800,
               "status": "passed"
             },
             "match": {
@@ -828,7 +828,7 @@
         "after": [
           {
             "result": {
-              "duration": 219000100,
+              "duration": 228010200,
               "status": "passed"
             },
             "match": {
@@ -841,7 +841,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4133723200,
+              "duration": 4185886300,
               "status": "passed"
             },
             "line": 15,
@@ -859,8 +859,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Provide a valid email id\u0027)]\"}\n  (Session info: MicrosoftEdge\u003d142.0.3595.94)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nBuild info: version: \u00274.38.0\u0027, revision: \u00276b412e825c*\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002725\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [794a95df8008259bc670dedbd2add5a6, findElement {using\u003dxpath, value\u003d//*[contains(text(),\u0027Provide a valid email id\u0027)]}]\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 8912, ms:edgeOptions: {debuggerAddress: localhost:52612}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\\Windows\\SystemTemp\\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52612/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 794a95df8008259bc670dedbd2add5a6\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)\r\n\tat stepdefinition.tc4_invalid_email_updation.the_system_should_display_an_error_message(tc4_invalid_email_updation.java:42)\r\n\tat ✽.the system should display an error message Provide a valid email id(file:///C:/Users/Administrator/Documents/Selenium%20demo/codecharge_community_portal_capstone/features/Update.feature:16)\r\n",
-              "duration": 12275391700,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Provide a valid email id\u0027)]\"}\n  (Session info: MicrosoftEdge\u003d142.0.3595.94)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nBuild info: version: \u00274.38.0\u0027, revision: \u00276b412e825c*\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002725\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [6c4e86c2b34a19ecb5a39a2cbad6da02, findElement {value\u003d//*[contains(text(),\u0027Provide a valid email id\u0027)], using\u003dxpath}]\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 7108, ms:edgeOptions: {debuggerAddress: localhost:53390}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\\Windows\\SystemTemp\\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53390/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 6c4e86c2b34a19ecb5a39a2cbad6da02\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)\r\n\tat stepdefinition.tc4_invalid_email_updation.the_system_should_display_an_error_message(tc4_invalid_email_updation.java:42)\r\n\tat ✽.the system should display an error message Provide a valid email id(file:///C:/Users/Administrator/Documents/Selenium%20demo/codecharge_community_portal_capstone/features/Update.feature:16)\r\n",
+              "duration": 13833547800,
               "status": "failed"
             },
             "line": 16,
@@ -906,11 +906,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:19:42.442Z",
+        "start_timestamp": "2025-11-25T15:32:15.523Z",
         "before": [
           {
             "result": {
-              "duration": 4194127900,
+              "duration": 4095838600,
               "status": "passed"
             },
             "match": {
@@ -925,7 +925,7 @@
         "after": [
           {
             "result": {
-              "duration": 248998600,
+              "duration": 233493400,
               "status": "passed"
             },
             "match": {
@@ -938,7 +938,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3674590300,
+              "duration": 3214563700,
               "status": "passed"
             },
             "line": 5,
@@ -960,7 +960,7 @@
           },
           {
             "result": {
-              "duration": 2015868800,
+              "duration": 2014699700,
               "status": "passed"
             },
             "line": 6,
@@ -986,11 +986,11 @@
         "steps": []
       },
       {
-        "start_timestamp": "2025-11-25T15:19:52.590Z",
+        "start_timestamp": "2025-11-25T15:32:25.095Z",
         "before": [
           {
             "result": {
-              "duration": 4128185200,
+              "duration": 7558500600,
               "status": "passed"
             },
             "match": {
@@ -1005,7 +1005,7 @@
         "after": [
           {
             "result": {
-              "duration": 184795700,
+              "duration": 177984000,
               "status": "passed"
             },
             "match": {
@@ -1018,7 +1018,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1240154600,
+              "duration": 2665318200,
               "status": "passed"
             },
             "line": 9,
@@ -1040,7 +1040,7 @@
           },
           {
             "result": {
-              "duration": 2005795500,
+              "duration": 2008249300,
               "status": "passed"
             },
             "line": 10,

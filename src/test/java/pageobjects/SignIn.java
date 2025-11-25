@@ -24,7 +24,7 @@ public class SignIn {
 		driver.findElement(By.name("Button_DoLogin")).click();
 	}
 	public void clicklogoutbutton() {
-		driver.findElement(By.linkText("Logout")).click();;
+		driver.findElement(By.linkText("Logout")).click();
 	}
 
 }
