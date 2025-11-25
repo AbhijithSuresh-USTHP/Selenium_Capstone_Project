@@ -13,6 +13,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageobjects.SignIn;
 import utilities.Screenshot;
 import utilities.extentreport;
@@ -38,13 +39,17 @@ public class tc2_invalid_SignIn extends extentreport {
 			String actout=driver.findElement(By.xpath("//*[contains(text(),'Login or Password is incorrect')]")).getText();
 			assertEquals(actout, expecout);
 			extentreport.logger.log(LogStatus.PASS, "test case passed");
+			Allure.step("Verification: Valid login passed");
+			
 			
 			
 		}catch(AssertionError e)
 		{
 			ss.takeScreenshot(scenarioname,this.currentusername);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
+			Allure.addAttachment("Invalid Login Failure Details", e.getMessage());
 			e.printStackTrace();
+			throw e;
 			
 		}
 		finally {

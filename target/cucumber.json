@@ -1,0 +1,1077 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "The user is logged in as admin and is in the admin dashboard",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:17:12.144Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8735492900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotoevent(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Adding an event with a valid future date",
+        "description": "",
+        "id": "adding-new-events;adding-an-event-with-a-valid-future-date",
+        "after": [
+          {
+            "result": {
+              "duration": 188995400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1516428900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the admin enters the valid event details ,Date as \"05/12/2025\", Title as \"Year End Party\", Description as \"Celebrate the New Year\", Location as \"Main Auditorium\", and Presenter as \"CEO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05/12/2025\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"Year End Party\"",
+                  "offset": 73
+                },
+                {
+                  "val": "\"Celebrate the New Year\"",
+                  "offset": 106
+                },
+                {
+                  "val": "\"Main Auditorium\"",
+                  "offset": 144
+                },
+                {
+                  "val": "\"CEO\"",
+                  "offset": 180
+                }
+              ],
+              "location": "stepdefinition.tc7_adding_valid_event.the_admin_enters_the_valid_event_details_Date_as_Title_as_Description_as_Location_as_and_Presenter_as(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3068807900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks the add button for valid case",
+            "match": {
+              "location": "stepdefinition.tc7_adding_valid_event.clicks_the_add_button_for_valid_case()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62001200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the system navigates to the events page and shows the added event in the event list",
+            "match": {
+              "location": "stepdefinition.tc7_adding_valid_event.the_system_navigates_to_the_events_page_and_shows_the_added_event_in_the_event_list()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@event"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "The user is logged in as admin and is in the admin dashboard",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:17:25.886Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7240346500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotoevent(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Adding an event with an invalid past date",
+        "description": "",
+        "id": "adding-new-events;adding-an-event-with-an-invalid-past-date",
+        "after": [
+          {
+            "result": {
+              "duration": 190997000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1488093500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the admin enters the invalid event details, Date as \"01/01/2001\", Title as \"New Year Party\", Description as \"Celebrate the New Year\", Location as \"Main Auditorium\", and Presenter as \"CEO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01/01/2001\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"New Year Party\"",
+                  "offset": 75
+                },
+                {
+                  "val": "\"Celebrate the New Year\"",
+                  "offset": 108
+                },
+                {
+                  "val": "\"Main Auditorium\"",
+                  "offset": 146
+                },
+                {
+                  "val": "\"CEO\"",
+                  "offset": 182
+                }
+              ],
+              "location": "stepdefinition.tc8_adding_invalid_event.the_admin_enters_the_invalid_event_details_Date_as_Title_as_Description_as_Location_as_and_Presenter_as(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3073047000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click the add button for invalid case",
+            "match": {
+              "location": "stepdefinition.tc8_adding_invalid_event.click_the_add_button_for_invalid_case()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat stepdefinition.tc8_adding_invalid_event.the_system_should_display_and_error_message_Event_date_must_be_today_or_a_future_date(tc8_adding_invalid_event.java:54)\r\n\tat ✽.the system should display and error message Event date must be today or a future date(file:///C:/Users/Administrator/Documents/Selenium%20demo/codecharge_community_portal_capstone/features/Events.feature:13)\r\n",
+              "duration": 145436500,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "the system should display and error message Event date must be today or a future date",
+            "match": {
+              "location": "stepdefinition.tc8_adding_invalid_event.the_system_should_display_and_error_message_Event_date_must_be_today_or_a_future_date()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@event"
+          }
+        ]
+      }
+    ],
+    "name": "Adding new events",
+    "description": "",
+    "id": "adding-new-events",
+    "keyword": "Feature",
+    "uri": "file:features/Events.feature",
+    "tags": [
+      {
+        "name": "@event",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "The user is in the Sign in page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:17:38.056Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4845192500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotologin(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Signin with valid details",
+        "description": "",
+        "id": "signin;signin-with-valid-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 186080300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 110998600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user enters username as \"admin\" and password as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 52
+                }
+              ],
+              "location": "stepdefinition.tc1_valid_SignIn.the_user_enters_username_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4092350700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "system redirects the user to the HOME page",
+            "match": {
+              "location": "stepdefinition.tc1_valid_SignIn.system_redirects_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "The user is in the Sign in page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:17:47.311Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4825717800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotologin(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Signin with valid details",
+        "description": "",
+        "id": "signin;signin-with-valid-details;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 173996600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 113023500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user enters username as \"guest\" and password as \"guest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"guest\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"guest\"",
+                  "offset": 52
+                }
+              ],
+              "location": "stepdefinition.tc1_valid_SignIn.the_user_enters_username_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5626757600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "system redirects the user to the HOME page",
+            "match": {
+              "location": "stepdefinition.tc1_valid_SignIn.system_redirects_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "The user is in the Sign in page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:17:58.064Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5018639200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotologin(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Signin with invalid details",
+        "description": "",
+        "id": "signin;signin-with-invalid-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 179347300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 112995500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user enters the username as \"admin\" and password as \"guest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"guest\"",
+                  "offset": 56
+                }
+              ],
+              "location": "stepdefinition.tc2_invalid_SignIn.the_user_enters_the_username_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2763652000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "system shows an error message Login or password in incorrect",
+            "match": {
+              "location": "stepdefinition.tc2_invalid_SignIn.system_shows_an_error_message_Login_or_password_in_incorrect()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "The user is in the Sign in page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:18:06.160Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5716362500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotologin(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Signin with invalid details",
+        "description": "",
+        "id": "signin;signin-with-invalid-details;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 190972600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 111999100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user enters the username as \"guest\" and password as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"guest\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 56
+                }
+              ],
+              "location": "stepdefinition.tc2_invalid_SignIn.the_user_enters_the_username_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2793472700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "system shows an error message Login or password in incorrect",
+            "match": {
+              "location": "stepdefinition.tc2_invalid_SignIn.system_shows_an_error_message_Login_or_password_in_incorrect()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Signin",
+    "description": "",
+    "id": "signin",
+    "keyword": "Feature",
+    "uri": "file:features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "The user has successfully logged in and is in the update information page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:18:14.994Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7862742200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotoupdate(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Updating Email using a valid email id",
+        "description": "",
+        "id": "email-updation;updating-email-using-a-valid-email-id;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 218003500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4145024000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters a valid email address like \"admin@gmail.com\" and clicks the submit button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@gmail.com\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinition.tc3_valid_email_updation.the_user_enters_a_valid_email_address_like_and_clicks_the_submit_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5604013900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the system redirects the user to the home page",
+            "match": {
+              "location": "stepdefinition.tc3_valid_email_updation.the_system_redirects_the_user_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@update"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "The user has successfully logged in and is in the update information page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:18:32.853Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7753389500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotoupdate(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Updating Email using a valid email id",
+        "description": "",
+        "id": "email-updation;updating-email-using-a-valid-email-id;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 217007800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4125229600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters a valid email address like \"admin@yahoo.com\" and clicks the submit button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yahoo.com\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinition.tc3_valid_email_updation.the_user_enters_a_valid_email_address_like_and_clicks_the_submit_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5648854700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the system redirects the user to the home page",
+            "match": {
+              "location": "stepdefinition.tc3_valid_email_updation.the_system_redirects_the_user_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@update"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "The user has successfully logged in and is in the update information page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:18:50.618Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9123801800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotoupdate(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Updating Email with an invalid email id",
+        "description": "",
+        "id": "email-updation;updating-email-with-an-invalid-email-id;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 208997800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4144062700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user enters an invalid email address like \"admin@abcd.com\" and click the submit button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@abcd.com\"",
+                  "offset": 46
+                }
+              ],
+              "location": "stepdefinition.tc4_invalid_email_updation.the_user_enters_an_invalid_email_address_like_and_click_the_submit_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Provide a valid email id\u0027)]\"}\n  (Session info: MicrosoftEdge\u003d142.0.3595.94)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nBuild info: version: \u00274.38.0\u0027, revision: \u00276b412e825c*\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002725\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [2dbb0b36e991ba7802b70642918537c8, findElement {using\u003dxpath, value\u003d//*[contains(text(),\u0027Provide a valid email id\u0027)]}]\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 11928, ms:edgeOptions: {debuggerAddress: localhost:52563}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\\Windows\\SystemTemp\\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52563/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 2dbb0b36e991ba7802b70642918537c8\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)\r\n\tat stepdefinition.tc4_invalid_email_updation.the_system_should_display_an_error_message(tc4_invalid_email_updation.java:42)\r\n\tat ✽.the system should display an error message Provide a valid email id(file:///C:/Users/Administrator/Documents/Selenium%20demo/codecharge_community_portal_capstone/features/Update.feature:16)\r\n",
+              "duration": 13832869200,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "the system should display an error message Provide a valid email id",
+            "match": {
+              "location": "stepdefinition.tc4_invalid_email_updation.the_system_should_display_an_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@update"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "The user has successfully logged in and is in the update information page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:19:17.946Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7849841600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotoupdate(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Updating Email with an invalid email id",
+        "description": "",
+        "id": "email-updation;updating-email-with-an-invalid-email-id;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 219000100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4133723200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user enters an invalid email address like \"admin@blabla.com\" and click the submit button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@blabla.com\"",
+                  "offset": 46
+                }
+              ],
+              "location": "stepdefinition.tc4_invalid_email_updation.the_user_enters_an_invalid_email_address_like_and_click_the_submit_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Provide a valid email id\u0027)]\"}\n  (Session info: MicrosoftEdge\u003d142.0.3595.94)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception\nBuild info: version: \u00274.38.0\u0027, revision: \u00276b412e825c*\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002725\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [794a95df8008259bc670dedbd2add5a6, findElement {using\u003dxpath, value\u003d//*[contains(text(),\u0027Provide a valid email id\u0027)]}]\nCapabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 8912, ms:edgeOptions: {debuggerAddress: localhost:52612}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\\Windows\\SystemTemp\\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52612/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 794a95df8008259bc670dedbd2add5a6\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)\r\n\tat stepdefinition.tc4_invalid_email_updation.the_system_should_display_an_error_message(tc4_invalid_email_updation.java:42)\r\n\tat ✽.the system should display an error message Provide a valid email id(file:///C:/Users/Administrator/Documents/Selenium%20demo/codecharge_community_portal_capstone/features/Update.feature:16)\r\n",
+              "duration": 12275391700,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "the system should display an error message Provide a valid email id",
+            "match": {
+              "location": "stepdefinition.tc4_invalid_email_updation.the_system_should_display_an_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@update"
+          }
+        ]
+      }
+    ],
+    "name": "Email Updation",
+    "description": "",
+    "id": "email-updation",
+    "keyword": "Feature",
+    "uri": "file:features/Update.feature",
+    "tags": [
+      {
+        "name": "@update",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "The user is in the login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:19:42.442Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4194127900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotoadmin(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Accessing admin dashboard as admin",
+        "description": "",
+        "id": "admin-dashboard;accessing-admin-dashboard-as-admin",
+        "after": [
+          {
+            "result": {
+              "duration": 248998600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3674590300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user clicks the admin button and enters the username as \"admin\" and password as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 84
+                }
+              ],
+              "location": "stepdefinition.tc5_valid_admin_dashboard.the_user_clicks_the_admin_button_and_enters_the_username_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2015868800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the system redirects the user to admin dashboard",
+            "match": {
+              "location": "stepdefinition.tc5_valid_admin_dashboard.the_system_redirects_the_user_to_admin_dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "The user is in the login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2025-11-25T15:19:52.590Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4128185200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.gotoadmin(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Accessing admin dashboard as guest",
+        "description": "",
+        "id": "admin-dashboard;accessing-admin-dashboard-as-guest",
+        "after": [
+          {
+            "result": {
+              "duration": 184795700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.hooks.closebrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1240154600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user tries clicking the admin button and  enters the username as \"guest\" and password as \"guest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"guest\"",
+                  "offset": 69
+                },
+                {
+                  "val": "\"guest\"",
+                  "offset": 93
+                }
+              ],
+              "location": "stepdefinition.tc6_invalid_admin_dashboard.the_user_tries_clicking_the_admin_button_and_enters_the_username_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2005795500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the system does not redirect the user to the login page and keeps the user in the login page",
+            "match": {
+              "location": "stepdefinition.tc6_invalid_admin_dashboard.the_system_redirects_the_user_to_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin"
+          }
+        ]
+      }
+    ],
+    "name": "Admin dashboard",
+    "description": "",
+    "id": "admin-dashboard",
+    "keyword": "Feature",
+    "uri": "file:features/adminLogin.feature",
+    "tags": [
+      {
+        "name": "@admin",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -14,10 +14,10 @@ import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageobjects.SignIn;
 import utilities.Screenshot;
 import utilities.extentreport;
-
 public class tc1_valid_SignIn{
 	private String currentusername;
 	WebDriver driver=hooks.driver;
@@ -42,13 +42,16 @@ public class tc1_valid_SignIn{
 		try {
 			assertEquals(actout, expecout);
 			extentreport.logger.log(LogStatus.PASS, "test case passed");
+			Allure.step("Verification: Valid login passed");
+	
 			
 			
 		}catch(AssertionError e)
 		{
 			ss.takeScreenshot(scenarioname,this.currentusername);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
-			e.printStackTrace();
+			Allure.addAttachment("Valid Login Failure Details", e.getMessage());
+			throw e;
 			
 		}
 		finally {

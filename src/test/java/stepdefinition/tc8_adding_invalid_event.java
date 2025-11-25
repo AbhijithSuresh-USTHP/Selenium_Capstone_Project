@@ -1,6 +1,7 @@
 package stepdefinition;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 
@@ -14,6 +15,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageobjects.Event;
 import utilities.Screenshot;
 import utilities.extentreport;
@@ -48,11 +50,15 @@ public class tc8_adding_invalid_event {
 			   WebElement ifevent= driver.findElement(By.xpath("//*[contains(text(),'"+this.currenttitle+"')]"));
 			   ss.takeScreenshot(scenarioname,this.currentdate);
 			   extentreport.logger.log(LogStatus.FAIL, "test case failed");
+			   Allure.addAttachment("Failure reason", "Adding event with invalid date failure");
+			   assertTrue(false);
 		   }
 		   catch(NoSuchElementException e) {
 			   System.out.println("No such element");
 				extentreport.logger.log(LogStatus.PASS, "test case passed");
+				Allure.step("Verification: Adding event with invalid date "+this.currentdate+" passed");
 				e.printStackTrace();
+				assertTrue(true);
 		   }
 		
 		   finally {

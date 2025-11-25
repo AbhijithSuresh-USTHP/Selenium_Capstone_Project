@@ -1,0 +1,1 @@
+Adding event with invalid date failure

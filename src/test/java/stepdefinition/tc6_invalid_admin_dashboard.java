@@ -14,6 +14,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageobjects.Admin;
 import pageobjects.SignIn;
 import utilities.Screenshot;
@@ -44,13 +45,16 @@ public class tc6_invalid_admin_dashboard {
 		try {
 			assertEquals(actout, expecout);
 			extentreport.logger.log(LogStatus.PASS, "test case passed");
+			Allure.step("Verification: Accessing admin dashboard as "+this.currentusername+" passed");
 			
 			
 		}catch(AssertionError e)
 		{
 			ss.takeScreenshot(scenarioname,this.currentusername);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
+			Allure.addAttachment("Invalid access of admin dashboard", e.getMessage());
 			e.printStackTrace();
+			throw e;
 			
 		}
 		finally {

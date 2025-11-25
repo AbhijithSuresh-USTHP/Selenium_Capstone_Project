@@ -13,6 +13,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageobjects.Update;
 import utilities.Screenshot;
 import utilities.extentreport;
@@ -41,19 +42,24 @@ public class tc4_invalid_email_updation {
 			String actout=driver.findElement(By.xpath("//*[contains(text(),'Provide a valid email id')]")).getText();
 			assertEquals(actout, expecout);
 			extentreport.logger.log(LogStatus.PASS, "test case passed");
+			Allure.step("Verification: Invalid Email Updation with "+this.currentusername+" passed");
 			
 			
 		}catch(AssertionError e)
 		{
 			ss.takeScreenshot(scenarioname,this.currentusername);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
+			Allure.addAttachment("Invalid Email updation Details", e.getMessage());
 			e.printStackTrace();
+			throw e;
 			
 		}
 		catch(org.openqa.selenium.NoSuchElementException e) {
 			ss.takeScreenshot(scenarioname,this.currentusername);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
+			Allure.addAttachment("Invalid Email updation Details", e.getMessage());
 			e.printStackTrace();
+			throw e;
 			
 		}
 		finally {

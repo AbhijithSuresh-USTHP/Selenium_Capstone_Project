@@ -12,6 +12,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageobjects.Update;
 import utilities.Screenshot;
 import utilities.extentreport;
@@ -41,13 +42,16 @@ public void the_system_redirects_the_user_to_the_home_page() throws InterruptedE
 	try {
 		assertEquals(actout, expecout);
 		extentreport.logger.log(LogStatus.PASS, "test case passed");
+		Allure.step("Verification: Valid Email Updation with "+this.currentusername+" passed");
 		
 		
 	}catch(AssertionError e)
 	{
 		ss.takeScreenshot(scenarioname,this.currentusername);
 		extentreport.logger.log(LogStatus.FAIL, "test case failed");
+		Allure.addAttachment("Valid Email updation Details", e.getMessage());
 		e.printStackTrace();
+		throw e;
 		
 	}
 		

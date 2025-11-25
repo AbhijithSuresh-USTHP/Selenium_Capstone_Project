@@ -14,6 +14,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 import pageobjects.Event;
 import utilities.Screenshot;
 import utilities.extentreport;
@@ -55,16 +56,21 @@ public class tc7_adding_valid_event {
 		   actout=ifevent.getText().trim();
 		   assertEquals(actout, expecout);
 		   extentreport.logger.log(LogStatus.PASS, "test case passed");
+		   Allure.step("Verification: Adding event with valid date "+this.currentdate+" passed");
 	   }
 	   catch(NoSuchElementException e) {
 		   ss.takeScreenshot(scenarioname,this.currentdate);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
+			Allure.addAttachment("Adding event with valid date failiure", e.getMessage());
 			e.printStackTrace();
+			throw e;
 	   }
 	   catch(AssertionError e) {
 		   ss.takeScreenshot(scenarioname,this.currentdate);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
+			Allure.addAttachment("Adding event with valid date failiure", e.getMessage());
 			e.printStackTrace();
+			throw e;
 	   }
 	   finally {
 			extentreport.extent.endTest(extentreport.logger);
