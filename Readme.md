@@ -40,6 +40,8 @@ Test execution reports are automatically generated upon completion.
 
 * **Allure Report:** Has to be generated using the command mvn:allure serve
 
+<img width="1882" height="1026" alt="image" src="https://github.com/user-attachments/assets/22b972b5-640d-4612-8dd0-ee33b47aeb2b" />
+
   
 
   
