@@ -7,6 +7,9 @@ This repository hosts a robust **Automation Testing Framework** developed for th
 
 ## Folder Structure
 
+<img width="871" height="759" alt="image" src="https://github.com/user-attachments/assets/0d2aa115-05cb-4658-a5ff-da4abfc1367d" /><img width="856" height="399" alt="image" src="https://github.com/user-attachments/assets/53a07f0e-87c7-4ff9-9b72-2aa9b5f93c6f" />
+
+
 
 
 ## Technology Stack
