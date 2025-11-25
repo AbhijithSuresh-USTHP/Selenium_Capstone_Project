@@ -20,14 +20,16 @@ import utilities.Screenshot;
 import utilities.extentreport;
 
 public class tc6_invalid_admin_dashboard {
+	private String currentusername;
 	WebDriver driver=hooks.driver;
 	Screenshot ss= new Screenshot(driver);
 	SignIn signin= new SignIn(driver);
 	Admin admin = new Admin(driver);
-	
+	String scenarioname=hooks.currentScenario.getName();
 	
 	@When("the user tries clicking the admin button and  enters the username as {string} and password as {string}")
 	public void the_user_tries_clicking_the_admin_button_and_enters_the_username_as_and_password_as(String uname, String pwd) {
+		this.currentusername=uname;
 		admin.clickadminbutton();
 		extentreport.logger=extentreport.extent.startTest("Accessing admin dashboard as guest");
 		signin.enterusername(uname);
@@ -46,7 +48,7 @@ public class tc6_invalid_admin_dashboard {
 			
 		}catch(AssertionError e)
 		{
-			ss.takeScreenshot();
+			ss.takeScreenshot(scenarioname,this.currentusername);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
 			e.printStackTrace();
 			

@@ -18,12 +18,15 @@ import utilities.Screenshot;
 import utilities.extentreport;
 
 public class tc4_invalid_email_updation {
+	private String currentusername;
 	WebDriver driver=hooks.driver;
 	Update upd=new Update(driver);
 	Screenshot ss= new Screenshot(driver);
+	String scenarioname=hooks.currentScenario.getName();
 	@When("the user enters an invalid email address like {string} and click the submit button")
 	public void the_user_enters_an_invalid_email_address_like_and_click_the_submit_button(String email) throws InterruptedException {
 		extentreport.logger=extentreport.extent.startTest("Invalid Email updation with email "+ email);
+		this.currentusername=email;
 		upd.clearemailfield();
 		Thread.sleep(2000);
 		upd.enteremail(email);
@@ -42,13 +45,13 @@ public class tc4_invalid_email_updation {
 			
 		}catch(AssertionError e)
 		{
-			ss.takeScreenshot();
+			ss.takeScreenshot(scenarioname,this.currentusername);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
 			e.printStackTrace();
 			
 		}
 		catch(org.openqa.selenium.NoSuchElementException e) {
-			ss.takeScreenshot();
+			ss.takeScreenshot(scenarioname,this.currentusername);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
 			e.printStackTrace();
 			

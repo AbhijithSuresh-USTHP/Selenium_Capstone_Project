@@ -20,12 +20,15 @@ import utilities.Screenshot;
 import utilities.extentreport;
 
 public class tc5_valid_admin_dashboard {
+	private String currentusername;
 	WebDriver driver=hooks.driver;
 	Screenshot ss= new Screenshot(driver);
 	SignIn signin= new SignIn(driver);
 	Admin admin = new Admin(driver);
+	String scenarioname=hooks.currentScenario.getName();
 	@When("the user clicks the admin button and enters the username as {string} and password as {string}")
 	public void the_user_clicks_the_admin_button_and_enters_the_username_as_and_password_as(String uname, String pwd) throws InterruptedException {
+		this.currentusername=uname;
 		admin.clickadminbutton();
 		extentreport.logger=extentreport.extent.startTest("Accessing admin dashboard as admin");
 		signin.enterusername(uname);
@@ -45,7 +48,7 @@ public class tc5_valid_admin_dashboard {
 			
 		}catch(AssertionError e)
 		{
-			ss.takeScreenshot();
+			ss.takeScreenshot(scenarioname,this.currentusername);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
 			e.printStackTrace();
 			

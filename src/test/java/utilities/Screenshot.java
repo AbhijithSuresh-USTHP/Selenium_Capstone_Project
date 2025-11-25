@@ -17,12 +17,13 @@ public class Screenshot{
 	public Screenshot(WebDriver driver) {
 		this.driver=driver;
 	}
-	public void takeScreenshot() throws IOException, WebDriverException {
+	public void takeScreenshot(String scenarioname,String uniqueid) throws IOException, WebDriverException {
 		System.out.println("Taking Screenshot");
+		String actualfilename=scenarioname+"_"+uniqueid;
+		String safeFilename = actualfilename.replaceAll("[\\\\/:*?\"<>|]", "_");
 		File scrFile;
 		scrFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		Files.copy(scrFile, new File("//C:\\Users\\Administrator\\Documents\\Selenium demo\\codecharge_community_portal_capstone\\Screenshots\\test"+step+".jpeg"));		
-		step++;
+		Files.copy(scrFile, new File("//C:\\Users\\Administrator\\Documents\\Selenium demo\\codecharge_community_portal_capstone\\Screenshots\\test "+safeFilename+".jpeg"));		
 	}
 
 }

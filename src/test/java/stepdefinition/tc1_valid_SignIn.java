@@ -10,6 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import com.relevantcodes.extentreports.LogStatus;
 
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,12 +19,15 @@ import utilities.Screenshot;
 import utilities.extentreport;
 
 public class tc1_valid_SignIn{
+	private String currentusername;
 	WebDriver driver=hooks.driver;
+	String scenarioname=hooks.currentScenario.getName();
 	SignIn signin = new SignIn(driver);
 	Screenshot ss=new Screenshot(driver);
 	@When("The user enters username as {string} and password as {string}")
 	public void the_user_enters_username_as_and_password_as(String username, String password) {
 		extentreport.logger = extentreport.extent.startTest("Valid login with user: " + username);
+		this.currentusername=username;
 		signin.enterusername(username);
 		signin.enterpassword(password);
 		
@@ -42,7 +46,7 @@ public class tc1_valid_SignIn{
 			
 		}catch(AssertionError e)
 		{
-			ss.takeScreenshot();
+			ss.takeScreenshot(scenarioname,this.currentusername);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
 			e.printStackTrace();
 			

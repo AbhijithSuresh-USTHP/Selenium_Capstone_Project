@@ -18,12 +18,15 @@ import utilities.Screenshot;
 import utilities.extentreport;
 
 public class tc2_invalid_SignIn extends extentreport {
+	private String currentusername;
 	WebDriver driver=hooks.driver;
+	String scenarioname=hooks.currentScenario.getName();
 	SignIn signin = new SignIn(driver);
 	Screenshot ss = new Screenshot(driver);
 	@When("the user enters the username as {string} and password as {string}")
 	public void the_user_enters_the_username_as_and_password_as(String uname, String pwd) {
 		logger=extent.startTest("Invalid login with user:" + uname);
+		this.currentusername=uname;
 		signin.enterusername(uname);
 		signin.enterpassword(pwd);
 	}
@@ -39,7 +42,7 @@ public class tc2_invalid_SignIn extends extentreport {
 			
 		}catch(AssertionError e)
 		{
-			ss.takeScreenshot();
+			ss.takeScreenshot(scenarioname,this.currentusername);
 			extentreport.logger.log(LogStatus.FAIL, "test case failed");
 			e.printStackTrace();
 			
