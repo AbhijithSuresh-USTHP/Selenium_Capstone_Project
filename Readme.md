@@ -4,6 +4,11 @@
 
 This repository hosts a robust **Automation Testing Framework** developed for the http://examples.codecharge.com/Portal/Default.php. The framework utilizes a powerful combination of industry-standard tools to implement a **Behavior-Driven Development (BDD)** approach, ensuring highly readable, maintainable, and scalable test automation.
 
+
+## Folder Structure
+
+
+
 ## Technology Stack
 
 | Technology | Role in Framework |
