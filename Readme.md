@@ -27,5 +27,6 @@ Test execution reports are automatically generated upon completion.
 
 * **HTML Report:** Found at `Report\report.html`
 
-[Insert the screenshot of your **Test Report Summary** here, followed by the screenshot of the **Application Interaction**.]
+<img width="1919" height="1028" alt="image" src="https://github.com/user-attachments/assets/6ac2c0dd-b91b-4923-b095-6e5f7c9c2fe5" />
+
 
